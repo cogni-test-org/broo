@@ -24,10 +24,10 @@ interface StatItem {
 }
 
 const STATS: StatItem[] = [
-  { value: "0%", label: "Payment Fees" },
-  { value: "1", label: "Starter Kit" },
-  { value: "2", label: "Critical Services" },
-  { value: "12k+", label: "Community-Source Files" },
+  { value: "1", label: "Node Repo" },
+  { value: "4", label: "Launch Gates" },
+  { value: "GHCR", label: "Image Path" },
+  { value: "Dolt", label: "Knowledge Mirror" },
 ];
 
 export function HomeStats(): ReactElement {

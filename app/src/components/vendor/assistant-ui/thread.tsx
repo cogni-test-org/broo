@@ -105,7 +105,7 @@ const ThreadWelcome: FC = () => {
             What do you want to build together?
           </div>
           <div className="aui-thread-welcome-message-inner fade-in slide-in-from-bottom-2 animate-in text-2xl text-muted-foreground/65 delay-100 duration-300 ease-out">
-            Start a project, join one, or ship a change—Cogni helps with the
+            Start a project, join one, or ship a change. Broo helps with the
             next step.
           </div>
         </div>
@@ -126,8 +126,8 @@ const ThreadSuggestions: FC = () => {
         },
         {
           title: "Tell me about",
-          label: "the builders behind cogni",
-          action: "Tell me about the builders behind Cogni",
+          label: "the builders behind broo",
+          action: "Tell me about the builders behind Broo",
         },
       ].map((suggestedAction, index) => (
         <div

@@ -37,14 +37,9 @@ import {
  */
 const AVAILABLE_GRAPHS: readonly GraphOption[] = [
   {
-    graphId: "langgraph:poly-brain" satisfies GraphId,
-    name: "Poly Brain",
-    description: "Prediction market analyst with live market data",
-  },
-  {
     graphId: "langgraph:brain" satisfies GraphId,
-    name: "Brain",
-    description: "Code-aware assistant with repo access",
+    name: "Broo Brain",
+    description: "General assistant for governed node work",
   },
   {
     graphId: "langgraph:poet" satisfies GraphId,

@@ -34,7 +34,7 @@ export function makeLogger(bindings?: Record<string, unknown>): Logger {
     enabled: !isTestTooling,
     // Stable base: bindings first, then reserved keys (prevents overwrite)
     // env label added by Alloy from DEPLOY_ENVIRONMENT, not in app logs
-    base: { ...bindings, app: "cogni-template", service: serviceName },
+    base: { ...bindings, app: "broo", service: serviceName },
     messageKey: "msg",
     timestamp: pino.stdTimeFunctions.isoTime, // RFC3339 format (matches Alloy stage.timestamp)
     redact: { paths: REDACT_PATHS, censor: "[REDACTED]" },

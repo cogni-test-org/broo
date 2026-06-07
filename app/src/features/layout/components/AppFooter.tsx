@@ -11,7 +11,7 @@
  * @public
  */
 
-import Image from "next/image";
+import { Coffee } from "lucide-react";
 import Link from "next/link";
 import type { ReactElement } from "react";
 
@@ -26,16 +26,11 @@ export function AppFooter(): ReactElement {
           {/* Brand column */}
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="flex items-center gap-2">
-              <Image
-                src="/TransparentBrainOnly.png"
-                alt="Cogni"
-                width={24}
-                height={24}
-              />
-              <span className="font-bold text-gradient-accent">Cogni</span>
+              <Coffee className="size-6 text-primary" />
+              <span className="font-bold text-gradient-accent">Broo</span>
             </Link>
             <p className="mt-3 text-muted-foreground text-sm">
-              Web3 Gov + Web2 AI
+              Community-owned AI node.
             </p>
           </div>
 

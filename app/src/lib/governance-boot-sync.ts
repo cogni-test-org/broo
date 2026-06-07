@@ -55,7 +55,7 @@ export function resolveBootSyncConfig(
 function defaultLogger(): Pick<pino.Logger, "info" | "warn" | "error"> {
   return pino({
     base: {
-      app: "cogni-template",
+      app: "broo",
       // biome-ignore lint/style/noProcessEnv: boot log emitted before the config framework
       service: process.env.SERVICE_NAME ?? "app",
       component: "governance-boot-sync",

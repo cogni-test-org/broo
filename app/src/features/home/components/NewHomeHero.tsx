@@ -12,7 +12,7 @@
 
 "use client";
 
-import { ArrowRight, Github } from "lucide-react";
+import { ArrowRight, Coffee, Github } from "lucide-react";
 import Link from "next/link";
 import type { ReactElement } from "react";
 
@@ -31,10 +31,13 @@ export function NewHomeHero(): ReactElement {
       <section className="relative flex h-[25rem] w-full flex-col items-center justify-center overflow-hidden bg-background md:h-[40rem]">
         {/* Hero Title with Sparkles */}
         {}
-        <h1 className="relative z-20 whitespace-nowrap text-center font-bold text-2xl text-foreground md:text-5xl lg:text-6xl">
-          Build{" "}
+        <div className="relative z-20 mb-5 flex size-16 items-center justify-center rounded-full border border-border bg-background/80 shadow-sm">
+          <Coffee className="size-8 text-primary" />
+        </div>
+
+        <h1 className="relative z-20 text-center font-bold text-4xl text-foreground md:text-6xl lg:text-7xl">
           <span className="relative inline-block text-gradient-accent">
-            community-owned
+            Broo
             {/* Sparkles Effect Container */}
             <div className="absolute top-full left-0 h-28 w-full md:h-40">
               {/* Gradients */}
@@ -84,8 +87,7 @@ export function NewHomeHero(): ReactElement {
               {/* Radial Gradient to prevent sharp edges */}
               <div className="absolute inset-0 h-full w-full bg-background [mask-image:radial-gradient(250px_100px_at_top,transparent_20%,white)] md:[mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]" />
             </div>
-          </span>{" "}
-          AI apps.
+          </span>
         </h1>
 
         {/* Content Below Sparkles */}
@@ -111,9 +113,9 @@ export function NewHomeHero(): ReactElement {
                 </Link>
               </Button>
               <Button variant="outline" size="lg" asChild>
-                <Link href="https://github.com/cogni-dao/cogni">
+                <Link href="https://github.com/cogni-test-org/broo">
                   <Github className="mr-2 size-4" />
-                  Start your own
+                  View source
                 </Link>
               </Button>
               <Button size="lg" onClick={handleTryDemo}>
@@ -123,7 +125,8 @@ export function NewHomeHero(): ReactElement {
             </div>
 
             <p className="mt-8 max-w-3xl text-lg text-muted-foreground sm:text-xl">
-              Web3 Gov + Web2 AI
+              A community-owned AI node for governed work, shared knowledge,
+              and fast iteration.
             </p>
           </div>
         </div>

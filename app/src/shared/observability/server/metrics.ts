@@ -65,7 +65,7 @@ if (!globalForMetrics.metricsInitialized) {
   globalForMetrics.metricsInitialized = true;
 
   metricsRegistry.setDefaultLabels({
-    app: "cogni-template",
+    app: "broo",
     env: process.env.DEPLOY_ENVIRONMENT ?? "local",
     node_id: readNodeIdForMetrics(),
   });
