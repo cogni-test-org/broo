@@ -36,7 +36,7 @@ describe("prepareMessages", () => {
 
     // System prompt is first, user message preserved
     expect(messages[0]?.role).toBe("system");
-    expect(messages[0]?.content).toContain("You are Cogni");
+    expect(messages[0]?.content).toContain("You are Broo");
     expect(messages[1]?.role).toBe("user");
     expect(messages[1]?.content).toBe("hello");
   });
