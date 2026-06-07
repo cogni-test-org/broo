@@ -9,15 +9,27 @@
 
 schema_version: "0.1.4"
 
-node_id: "b927a9dd-6132-4fc9-a51e-e3cee2568e3c"
-scope_id: "b44d4394-3147-5787-acab-51546be6a3da"
+node_id: "446aa06c-8f4b-4218-bb44-baa43e307954"
+scope_id: "404fbe58-e7ff-541f-8087-b5adc499bd38"
 scope_key: "default"
 
 intent:
-  name: node-template
+  name: broo
 
 cogni_dao:
-  chain_id: "8453" # Base mainnet
+  dao_contract: "0xd16e5b8afbe2de402bebca0e5bf34e03bd3c58ab"
+  plugin_contract: "0x383f062bed976383e97897fc27c7616cdb8f33d9"
+  signal_contract: "0xd60815502fdd2279bfefaebf69378beeb0d03501"
+  chain_id: "8453"
+
+knowledge:
+  database: "knowledge_broo"
+  remote:
+    provider: dolthub
+    owner: "cogni-test-nodes"
+    repo: "knowledge-broo"
+    url: "https://doltremoteapi.dolthub.com/cogni-test-nodes/knowledge-broo"
+    custody: cogni-owned
 
 # Activity ledger ingestion + approver allowlist.
 # `approvers` gates the `(admin)/` route group and write routes under
@@ -30,7 +42,7 @@ activity_ledger:
   activity_sources:
     github:
       attribution_pipeline: cogni-v0.0
-      source_refs: ["Cogni-DAO/standalone-node"]
+      source_refs: ["cogni-test-org/broo"]
 
 payments:
   status: pending_activation
